@@ -1,0 +1,10 @@
+footer {
+  background: var(--dark_color_btn);
+  padding: 2rem;
+  color: var(--light_color_ftr);
+  @include Center;
+  font-size: 3rem;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}

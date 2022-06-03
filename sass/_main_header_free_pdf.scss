@@ -1,0 +1,133 @@
+.free_pdf_body {
+  background: #9d25fb;
+
+  .navigator {
+    background: #aa7aff;
+    box-shadow: 3px 16px 52px 0px rgba(0, 0, 0, 0.52);
+    -webkit-box-shadow: 3px 16px 52px 0px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: 3px 16px 52px 0px rgba(0, 0, 0, 0.52);
+
+    font-size: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--light_color);
+    // margin: 2rem 0rem;
+    @include Center;
+    justify-content: space-around;
+
+    h2 {
+      margin: 2rem;
+      text-align: center;
+    }
+  }
+}
+
+.free_pdf_title::after {
+  content: "";
+
+  width: 10%;
+  height: 0.5rem;
+  background: var(--dark_color);
+}
+
+.free_pdf_title {
+  @include Center;
+  font-size: 5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 2rem;
+  color: var(--light_color);
+  flex-direction: column;
+}
+
+.free_pdf_back {
+  background: #aa7aff;
+  padding: 2rem 0.2rem;
+  border-radius: 2.5rem;
+  // display: flex;
+  @include Center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 4rem auto;
+
+  h1 {
+    width: 100%;
+    color: var(--light_color);
+    @include Center;
+    margin: 2rem 0rem;
+    z-index: 1;
+    font-size: 4rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  div {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    // padding: 0rem 1rem;
+    margin: 1rem 4rem;
+    // width: 20%;
+    @include Center;
+    flex-direction: column;
+
+    img {
+      width: 20rem;
+      // height: 50%;
+      transition: 0.5s;
+    }
+
+    img:hover {
+      transform: scale(1.05) rotate(0deg);
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: var(--light_color);
+      z-index: 1;
+      // filter: brightness(50);
+      // position: relative;
+      // margin-top: 6rem;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: row;
+
+      a {
+        font-size: 2rem;
+        text-align: center;
+        background: #9d25fb;
+        margin: 1rem 1rem;
+        padding: 1rem 2rem;
+        border-radius: 25px;
+        transition: 0.5s;
+        // position: absolute;
+      }
+
+      .buy_now_btn {
+        background: none;
+        border: 2px solid #9d25fb;
+        color: #9d25fb;
+
+        svg {
+          transition: 0.5s transform;
+        }
+      }
+
+      .buy_now_btn:hover svg {
+        // transform: scale(1.5);
+        transform: rotate(-360deg);
+      }
+
+      .download_now_btn {
+        svg {
+          transition: 0.5s transform;
+        }
+      }
+
+      .download_now_btn:hover svg {
+        // transform: scale(1.5);
+        transform: rotate(-360deg);
+      }
+    }
+  }
+}

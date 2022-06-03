@@ -1,0 +1,111 @@
+@media (max-width: 1100px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 930px) {
+  .contact_body .contact_img_div {
+    float: none;
+    width: auto;
+    height: auto;
+  }
+
+  .contact_body .contact_content_div {
+    float: none;
+    width: auto;
+    height: auto;
+
+    h1,
+    h2,
+    button {
+      text-align: center;
+      margin: 2rem auto;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .main_header {
+    height: auto;
+
+    .section_1 {
+      width: 100%;
+      height: auto;
+
+      h1 {
+        text-align: center;
+      }
+
+      div {
+        div {
+          justify-content: center;
+        }
+      }
+    }
+
+    .section_2 {
+      width: auto;
+      height: auto;
+      padding: 5rem 0rem;
+      float: none;
+
+      div {
+        img {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  .free_pdf_back {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .books_type_cat .cards_div div {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  .main_header .section_1 div div button {
+    width: auto;
+    height: auto;
+    font-size: 3rem;
+    padding: 2rem 4rem;
+  }
+
+  .books_type_cat .cards_div div h2 {
+    font-size: 4rem;
+  }
+
+  .books_type_cat .cards_div div img {
+    width: 30%;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 40%;
+  }
+  .top svg {
+    width: 5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 30%;
+  }
+
+  nav .options a svg {
+    width: 20px;
+    height: 20px;
+  }
+}

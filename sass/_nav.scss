@@ -1,0 +1,60 @@
+nav {
+  background: var(--dark_color);
+  color: var(--light_color);
+  font-size: 2rem;
+  width: 100%;
+  padding: 1rem 1rem 1rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    font-family: "Segoe UI";
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    a {
+      @include Center;
+
+      .logo {
+        width: 5rem;
+        margin-right: 0.2rem;
+
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .options {
+    @include Center;
+  }
+
+  h3 {
+    font-family: "Segoe UI";
+    font-weight: 100;
+    margin: 0rem 2rem;
+    text-align: center;
+  }
+}
+.hidden {
+  display: none;
+  border: 2px solid var(--light_color);
+  position: absolute;
+  top: 15rem;
+  right: 5rem;
+  z-index: 9999;
+  background: var(--dark_color);
+  padding: 1rem 0rem;
+
+  h3 {
+    margin: 2rem 4rem;
+    transition: 0.5s;
+  }
+
+  h3:hover {
+    letter-spacing: 2px;
+    // font-weight: bold;
+  }
+}
